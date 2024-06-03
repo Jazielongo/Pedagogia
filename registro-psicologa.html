@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Psicóloga</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./img/logo-zanate.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-3 border-bottom border-success px-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./img/logo-zanate.png" alt="Logo" width="30" height="30" class="d-inline-block">
+                <strong><span class="text-info">NEURO</span>TICS</strong>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login-alumno.html">Alumnos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login-tutor.html">Tutores</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light bg-gradient">
+        <div class="m-0 vh-100 row justify-content-center align-items-center">
+            <form class="row g-2 bg-color bg-white p-4 shadow rounded" style="width: 500px;">
+                <h2 class="title text-center">Formulario de Registro</h1>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="text" id="name" placeholder="Escriba su(s) nombre(s)">
+                    <label class="form-label" for="name">Nombre(s)</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="text" id="last-name" placeholder="Escriba sus apellidos">
+                    <label class="form-label" for="last-name">Apellidos</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="email" id="Email" placeholder="Escriba su correo electrónico">
+                    <label class="form-label" for="Email">Correo electrónico</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="password" id="password" placeholder="Escriba su contraseña">
+                    <label class="form-label" for="password">Contraseña</label>
+                </div>
+    
+    
+                <label class="form-label" for="sexo">Seleccione su sexo:</label>
+                <div class="form-check form-check-inline col-auto">
+                    <label class="form-check-label" for="check1">Hombre</label>
+                    <input class="form-check-input" id="check1" type="radio" name="sexo">
+                </div>
+                <div class="form-check form-check-inline col-auto">
+                    <label class="form-check-label" for="check2">Mujer</label>
+                    <input class="form-check-input" id="check2" type="radio" name="sexo">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success float-end">Registrarme</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

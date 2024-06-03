@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso Tutor</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./img/logo-zanate.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-3 border-bottom border-success px-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./img/logo-zanate.png" alt="Logo" width="30" height="30" class="d-inline-block">
+                <strong><span class="text-info">NEURO</span>TICS</strong>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu-nav" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="./index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./login-alumno.html">Alumnos</a></li>
+                    <li class="nav-item"><a href="./registro-psicologa.html" class="nav-link">Psicólogas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid bg-light bg-gradient">
+        <div class="m-0 vh-100 row justify-content-center align-items-center">
+            <form class="row g-2 bg-color bg-white p-4 border rounded shadow" style="width: 500px;">
+                <h2 class="title text-center">Ingresar a tutorado</h2>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="text" id="token" placeholder="">
+                    <label class="form-label" for="token">Token</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="email" id="email" placeholder="">
+                    <label class="form-label" for="name">Correo electrónico</label>
+                </div>
+                <div class="form-floating col-12">
+                    <input class="form-control" type="password" id="password" placeholder="">
+                    <label class="form-label" for="password">Cree una contraseña</label>
+                </div>
+
+                <label class="form-label" for="sexo">Seleccione su sexo:</label>
+                <div class="form-check form-check-inline col-auto">
+                    <label for="check1" class="form-check-label">Hombre</label>
+                    <input type="radio" class="form-check-input" id="check1" name="sexo">
+                </div>
+                <div class="form-check form-check-inline col-auto">
+                    <label for="check2" class="form-check-label">Mujer</label>
+                    <input type="radio" class="form-check-input" id="check2" name="sexo">
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-success float-end" href="./interfaz-tutor.html">Ingresar</a>
+                    <!-- <button type="submit" class="btn btn-success float-end">Ingresar</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
